@@ -1,0 +1,38 @@
+{
+  "_README": "样本数据：结构按麦当劳 MCP query-meals 线上实测构造；餐品名/编码取自社区实测记录（2026-10），价格数值为演示用途构造，非真实门店快照。",
+  "_channel": "到店（orderType=1）。注意：外送渠道编码不同（如巨无霸外送为 901100）。",
+  "categories": [
+    {
+      "category": "主食",
+      "products": [
+        { "code": "1100", "name": "巨无霸", "price": 2050, "category": "主食" },
+        { "code": "1450", "name": "麦香鱼", "price": 1850, "category": "主食" },
+        { "code": "9900005453", "name": "麦辣鸡腿汉堡套餐", "price": 3350, "category": "主食" },
+        { "code": "100116", "name": "麦辣鸡腿汉堡", "price": 2150, "category": "主食" },
+        { "code": "100126", "name": "双层吉士汉堡", "price": 2250, "category": "主食" }
+      ]
+    },
+    {
+      "category": "小食",
+      "products": [
+        { "code": "120101", "name": "中薯条", "price": 1150, "category": "小食" },
+        { "code": "120102", "name": "大薯条", "price": 1350, "category": "小食" },
+        { "code": "120201", "name": "麦乐鸡 5 块", "price": 1150, "category": "小食" }
+      ]
+    },
+    {
+      "category": "饮料",
+      "products": [
+        { "code": "120301", "name": "中杯可口可乐", "price": 900, "category": "饮料" },
+        { "code": "120302", "name": "中杯零度可乐", "price": 900, "category": "饮料" },
+        { "code": "120303", "name": "冰美式中杯", "price": 1190, "productOriginalPrice": 2300, "category": "饮料" }
+      ]
+    },
+    {
+      "category": "甜品",
+      "products": [
+        { "code": "120401", "name": "草莓麦旋风", "price": 1250, "category": "甜品" }
+      ]
+    }
+  ]
+}

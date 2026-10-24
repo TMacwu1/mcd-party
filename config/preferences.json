@@ -1,0 +1,13 @@
+{
+  "_README": "默认偏好配置。Agent 可在对话中按用户临时要求覆盖，无需改文件。",
+  "budget_presets": [
+    { "label": "经济型", "per_person": 2500 },
+    { "label": "标准型", "per_person": 3500 },
+    { "label": "丰盛型", "per_person": 5000 }
+  ],
+  "common_avoid": ["辣", "牛肉", "鱼", "海鲜", "冰"],
+  "default_channel": "takeout",
+  "combo_ratio": { "staple": 0.45, "snack": 0.6, "drink": 0.4 },
+  "aa_modes": ["按实付均摊", "按原价均摊"],
+  "notes": "金额单位与麦当劳 MCP 一致（分）。combo_ratio 为 pick_combo 的预算分配比例。"
+}

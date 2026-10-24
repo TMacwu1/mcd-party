@@ -1,0 +1,26 @@
+{
+  "_README": "样本数据：结构按 query-store-coupons 线上实测构造（仅该工具返回 couponId）。数值为演示用途构造。",
+  "coupons": [
+    {
+      "couponId": "CP20261024001",
+      "title": "满 60 减 15（麦麦省）",
+      "threshold": 6000,
+      "discount": 1500,
+      "applicable": ["1100", "1450", "100116", "100126", "120101", "120301"]
+    },
+    {
+      "couponId": "CP20261024002",
+      "title": "麦辣鸡腿汉堡套餐立减 8 元",
+      "threshold": 0,
+      "discount": 800,
+      "applicable": ["9900005453"]
+    },
+    {
+      "couponId": "CP20261024003",
+      "title": "中薯条 0 元兑换券（需任意消费）",
+      "threshold": 1000,
+      "discount": 1150,
+      "applicable": ["120101"]
+    }
+  ]
+}
