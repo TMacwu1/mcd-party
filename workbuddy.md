@@ -97,6 +97,21 @@
 ## 4. 人类参与者操作
 
 1. 任务授权与方向确认（2026-10-24 21:29）
-2. 获取麦当劳 MCP Token（open.mcd.cn/mcp 手机号登录激活）——**待完成**
-3. GitHub 仓库创建与推送授权——**待完成**
-4. 参赛 Issue 提交前终审——**待完成**
+2. 获取麦当劳 MCP Token（open.mcd.cn/mcp 手机号登录激活）——**已完成**（2026-10-24 晚）
+3. GitHub 仓库创建与推送授权——**已完成**（仓库 TMacwu1/mcd-party）
+4. 参赛 Issue 提交前终审——**已完成**
+
+### 阶段 7：推送与报名（2026-10-24 23:00）
+
+网络环境实测：git push 直连 github.com:443 超时（墙），本地代理对 git smart HTTP 返回 502。
+换用 GitHub Git Data API（api.github.com 可达）完成原子提交：
+- 空仓库先用 contents API 创建 README.md 作为初始提交（tree API 对空仓库返回 409）
+- 再以 trees/commits/refs 一次性提交剩余 13 个文件（tree 不带 base_tree 会全量替换，README.md 需补回）
+- 最终远端 14 个文件，参赛五件套齐全
+
+参赛报名 Issue 已提交（官方仓库 M-China/mcd-developer-innovation-challenge #1304），
+标题「麦拼单 —— 基于麦当劳 MCP 的多人拼单点餐 Skill」，正文按官方模板（【参赛申请】+ 项目名称/裸链接/简介，
+标题正文间无空行）。等官方机器人回复报名结果。
+
+全部开发对话由 WorkBuddy 完成（含 MCP 实测、单测修复、网络排障、API 推送方案）。
+
